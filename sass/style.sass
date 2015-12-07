@@ -1,0 +1,53 @@
+/* colors */
+$steel: rgba(0, 0, 0, .9)
+$white: rgba(250, 250, 250, .8)
+$accent: rgba(50, 50, 50, .4)
+$accent-hover: darken($accent, 90%)
+$gold: rgba(218,165,42, .9)
+
+
+#calculator-body
+  background-color: $steel
+  height: 400px
+  width: 300px
+  border-radius: 10px
+  box-shadow: 12px 10px 10px $accent-hover
+
+#output-container
+  width: 90%
+  margin: auto
+  background-color: $white
+  height: 40px
+  margin-top: 50px
+  color: darken($steel, 90%)
+  
+#output
+  font-size: 28px
+  margin-right: 10px
+  
+#keypad-container
+  text-align: left
+  margin-left: 12px
+  
+.key 
+  color: $white
+  margin-top: 18px
+  display: inline-block
+  padding: 10px
+  width: 49px
+  text-align: center
+  margin-right: 12px
+  background-color: lighten($accent, 5%)
+  &:hover 
+    background-color: lighten($accent, 10%)
+    cursor: pointer
+    box-shadow: 10px 10px 5px $accent-hover
+   
+#add
+  position: absolute
+  height: 98px
+  padding-top: 38px
+  
+#ac, #ce
+  color: $gold
+  
